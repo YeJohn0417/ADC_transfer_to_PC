@@ -1,33 +1,42 @@
-# ADC Data Transfer to PC
+# ADC_transfer_to_PC
 
-## Overview
+## 專案介紹
 
-This project implements a data communication interface between an embedded system and a host PC for ADC signal acquisition and transmission.
+本專案主要實現 ADC 資料擷取與後端 PC 之間的通訊介面，將硬體端所擷取的數位訊號傳輸至電腦，供後續訊號處理、波形顯示及資料分析使用。
 
-The system transfers digitized signals from the hardware platform to the PC for further signal processing, visualization, and analysis.
+此系統可應用於生醫訊號量測平台，作為硬體電路與後端軟體之間的資料傳輸橋樑。
 
-## Features
+## 主要功能
 
-- ADC data acquisition and transmission
-- Communication between the hardware platform and host PC
-- Support for signal monitoring and data analysis
+- **ADC 資料傳輸**：接收並傳送 ADC 轉換後的數位訊號。
+- **硬體與 PC 通訊**：建立嵌入式系統與後端電腦的資料傳輸介面。
+- **訊號處理與分析**：提供後端 PC 進行訊號還原、濾波及資料分析。
+- **系統驗證**：協助硬體功能測試與量測結果驗證。
 
-## System Architecture
+## 系統架構
 
 ```text
-ADC → Embedded System → Communication Interface → Host PC
-                                                  ↓
-                                         Signal Processing
-                                                  ↓
-                                          Data Visualization
+Analog Signal
+      │
+      ▼
+     ADC
+      │
+      ▼
+ Embedded System
+      │
+      ▼
+Communication Interface
+      │
+      ▼
+    Host PC
+      │
+      ▼
+Signal Processing & Visualization
 ```
 
-## Applications
+## 應用領域
 
-- Biomedical signal acquisition
-- Real-time signal monitoring
-- Hardware-to-PC communication and debugging
-
-## Development Status
-
-Under development.
+- 生醫訊號擷取與分析
+- ADC 數位訊號傳輸
+- 嵌入式系統與 PC 通訊
+- 硬體量測與系統驗證
