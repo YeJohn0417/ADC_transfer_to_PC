@@ -42,9 +42,4 @@ ADC → ESP32 → PC → SDM_DEMO_GUI
 
 [SDM_DEMO_GUI — GitHub Repository](https://github.com/YeJohn0417/SDM_DEMO_GUI)
 
-## 應用領域
-
-- 生醫訊號擷取與分析
-- ADC 數位訊號傳輸
-- 嵌入式系統與 PC 通訊
-- 硬體量測與系統驗證
+**祝大家都順利畢業~~**
